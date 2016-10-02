@@ -46,9 +46,9 @@ a too big number of intersections and would take too long to find and list all o
 Steps to download and build:
 ----------------------------
 
-git clone ... 
+git clone https://github.com/cezarsv/Intersections.git
 
-cd intersections_repo
+cd Intersections
 
 cd solution_iterative
 

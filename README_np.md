@@ -6,46 +6,30 @@ The project was created and tested on Cygwin and Linux, using GCC 4.8 and GNU Ma
 There are two solutions: "solution_iterative" - the main solution, and "solution_recursive" - a suplementary one.
 They can be built and run in the same way. Each solution can be built separately, and contains also a set of Unit Tests.
 
-### rebuild from scratch everything:
-make
+make		-> rebuild from scratch everything
+make build	-> build only the changed sources
+make run_test	-> run all the Unit Tests
 
-### build only the changed sources:
-make build
-
-### run all the Unit Tests:
-make run_test
-
-### run the main executable:
-./output/IntersectCalculator file_name [max_num_of_intersect]
-e.g.
-./output/IntersectCalculator GoodFile.txt
+./output/IntersectCalculator file_name [max_num_of_intersect]	-> run the main executable
 
 
 The files:
 
-source files for reading the input file and calculating the intersections:
-IntersectCalculator.h, IntersectCalculator.cpp
+IntersectCalculator.h, IntersectCalculator.cpp		-> source files for reading the input file and calculating the intersections
 
-source file containing the function 'main()' of IntersectCalculator executable:
-main.cpp
+main.cpp						-> source file containing the function 'main()' of IntersectCalculator executable
 
-source files with the Unit Tests cases definitions:
-TestDriver.h, TestDriver.cpp
+TestDriver.h, TestDriver.cpp				-> source files with the Unit Tests cases definitions
 
-Json source files, downloaded from https://github.com/open-source-parsers/jsoncpp.git:
-jsoncpp.cpp, json
+jsoncpp.cpp, json					-> Json source files, downloaded from https://github.com/open-source-parsers/jsoncpp.git
 
-bad formatted Json file used in Unit Tests:
-BadFile.txt
+BadFile.txt						-> bad formatted Json file used in Unit Tests
 
-proper Json file used in Unit Tests (the example from the requirements):
-GoodFile.txt
+GoodFile.txt						-> proper Json file used in Unit Tests
 
-directory containing the executables and the obj files:
-output
+output							-> directory containing the executables and the obj files
 
-empty file needed to force Git to maintain the empty dir 'output':
-output/gitkeep
+output/gitkeep						-> empty file needed to force Git to maintain the empty dir 'output'
 
 
 General usage:
@@ -90,3 +74,4 @@ cd ../solution_recursive
 make
 make run_test
 ./output/IntersectCalculator GoodFile.txt
+
